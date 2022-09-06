@@ -1,8 +1,8 @@
 FROM python:3.9
 
-WORKDIR /root/Liana
+WORKDIR /app/
 
-RUN git clone https://github.com/VixiaID/Liana.git
+COPY . /app
 
 RUN pip3 install --no-cache-dir -r requirements.txt
 
