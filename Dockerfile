@@ -3,8 +3,8 @@ FROM python:3.10
 WORKDIR /app
 
 COPY requirements.txt /app/
-RUN pip install -r requirements.txt
+RUN python3 -m pip install -r requirements.txt
 
 COPY . /app
 
-CMD python bot.py
+CMD python3 bot.py
