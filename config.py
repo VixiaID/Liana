@@ -10,13 +10,13 @@ class Config(object):
     # Array to store users who are authorized to use the bot
     #AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
     # Banned Unwanted Members..
-    BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
+    #BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     # Update channel for Force Subscribe
-    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
-    # Log Channel ID
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    # UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
+    # # Log Channel ID
+    # LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
     # Telegram maximum file upload size
     MAX_FILE_SIZE = 50000000
     TG_MAX_FILE_SIZE = 2097152000
