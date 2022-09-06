@@ -1,11 +1,9 @@
-FROM python:3.8
+FROM python:3.9
 
-WORKDIR /app
+WORKDIR /root/Liana
 
-COPY requirements.txt /app/
+RUN git clone https://github.com/VixiaID/Liana.git
 
 RUN pip3 install --no-cache-dir -r requirements.txt
-
-COPY . /app
 
 CMD ["python3", "-m", "bot"]
