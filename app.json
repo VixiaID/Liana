@@ -34,25 +34,6 @@
       "description": "Get this value from https://my.telegram.org",
       "value": ""
     },
-    "AUTH_USERS": {
-      "description": "allow only pre-defined users to use this bot",
-      "value": ""
-    },
-    "BANNED_USERS": {
-      "description": "Banned Unwanted members..",
-      "value": "",
-      "required": false
-    },
-    "UPDATE_CHANNEL": {
-      "description": "For Force Subscribe. Paste your Update channel USERNAME (without @)..",
-      "value": "",
-      "required": false
-    },
-    "LOG_CHANNEL": {
-      "description": "Your Log Channel ID",
-      "value": "",
-      "required": false
-    },
     "DEF_THUMB_NAIL_VID_S": {
       "description": "default thumbnail to be used in the videos. Incase, youtube-dl is unable to find a thumbnail.",
       "value": "",
