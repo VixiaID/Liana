@@ -31,10 +31,9 @@ async def help_user(bot, update):
         text=Translation.HELP_USER,
         reply_markup=InlineKeyboardMarkup(
           [
-            [
               InlineKeyboardButton("Back", start)
-             ]
            ]
+        ),
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
@@ -49,11 +48,9 @@ async def start(bot, update):
         text=Translation.START_TEXT.format(update.from_user.first_name),
         reply_markup=InlineKeyboardMarkup(
             [
-                [
                     InlineKeyboardButton(
                         "Help", help_user),
                     # InlineKeyboardButton("Back", switch_inline_query_current_chat=""),
-                ]
             ]
         ),
         reply_to_message_id=update.message_id
