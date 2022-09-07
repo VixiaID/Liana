@@ -31,7 +31,7 @@ async def help_user(bot, update):
         text=Translation.HELP_USER,
         reply_markup=InlineKeyboardMarkup(
           [
-              InlineKeyboardButton("Back", start),
+              InlineKeyboardButton("Back", switch_inline_query="start"),
            ]
         ),
         parse_mode="html",
