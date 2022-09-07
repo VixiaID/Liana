@@ -32,10 +32,9 @@ async def help_user(bot, update):
         reply_markup=InlineKeyboardMarkup(
           [
             [
-              InlineKeyboardButton("Back", switch_inline_query_current_chat="")
+              InlineKeyboardButton("Back", start)
              ]
-          ]
-        ),
+           ]
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
@@ -52,7 +51,7 @@ async def start(bot, update):
             [
                 [
                     InlineKeyboardButton(
-                        "Help", callback_data="help"),
+                        "Help", help_user),
                     # InlineKeyboardButton("Back", switch_inline_query_current_chat=""),
                 ]
             ]
