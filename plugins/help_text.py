@@ -50,7 +50,7 @@ async def start(bot, update):
             [
                  InlineKeyboardButton(
                         "Help", callback_data="help"),
-                 # InlineKeyboardButton("Back", switch_inline_query_current_chat=""),
+                 InlineKeyboardButton("Back", switch_inline_query_current_chat="help"),
             ]
         ),
         reply_to_message_id=update.message_id
