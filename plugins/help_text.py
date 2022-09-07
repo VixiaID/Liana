@@ -48,9 +48,9 @@ async def start(bot, update):
         text=Translation.START_TEXT.format(update.from_user.first_name),
         reply_markup=InlineKeyboardMarkup(
             [
-                    InlineKeyboardButton(
-                        "Help", help_user),
-                    # InlineKeyboardButton("Back", switch_inline_query_current_chat=""),
+                 InlineKeyboardButton(
+                        "Help", switch_inline_query="help_user"),
+                 # InlineKeyboardButton("Back", switch_inline_query_current_chat=""),
             ]
         ),
         reply_to_message_id=update.message_id
