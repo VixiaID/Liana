@@ -31,7 +31,7 @@ async def help_user(bot, update):
         text=Translation.HELP_USER,
         reply_markup=InlineKeyboardMarkup(
           [
-              InlineKeyboardButton("Back", switch_inline_query="start"),
+              InlineKeyboardButton("Back", callback_data="start"),
            ]
         ),
         parse_mode="html",
@@ -49,7 +49,7 @@ async def start(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                  InlineKeyboardButton(
-                        "Help", switch_inline_query="help_user"),
+                        "Help", callback_data="help_user"),
                  # InlineKeyboardButton("Back", switch_inline_query_current_chat=""),
             ]
         ),
