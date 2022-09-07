@@ -48,8 +48,7 @@ async def start(bot, update):
         text=Translation.START_TEXT.format(update.from_user.first_name),
         reply_markup=InlineKeyboardMarkup(
             [
-                 InlineKeyboardButton(
-                        "Help", callback_data="help"),
+                 #InlineKeyboardButton("Help", callback_data="help"),
                  InlineKeyboardButton("Back", switch_inline_query_current_chat="help"),
             ]
         ),
