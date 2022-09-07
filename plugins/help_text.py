@@ -49,7 +49,7 @@ async def start(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                  InlineKeyboardButton(
-                        "Help", callback_data="help_user"),
+                        "Help", callback_data="help"),
                  # InlineKeyboardButton("Back", switch_inline_query_current_chat=""),
             ]
         ),
