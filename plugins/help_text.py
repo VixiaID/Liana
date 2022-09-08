@@ -29,11 +29,7 @@ async def help_user(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.HELP_USER,
-        reply_markup=InlineKeyboardMarkup(
-          [
-              InlineKeyboardButton("Back", callback_data="start"),
-           ]
-        ),
+        reply_markup=Translation.HELP_BUTTONS,
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
@@ -46,11 +42,6 @@ async def start(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.START_TEXT.format(update.from_user.first_name),
-        reply_markup=InlineKeyboardMarkup(
-            [
-                 #InlineKeyboardButton("Help", callback_data="help"),
-                 InlineKeyboardButton("Back", switch_inline_query_current_chat="help"),
-            ]
-        ),
+        reply_markup=Translation.START_BUTTONS
         reply_to_message_id=update.message_id
     )
